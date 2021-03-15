@@ -16,8 +16,14 @@ public class MainController {
         return "/userClient/createEvent";
     }
 
-    @GetMapping("/profileabout")
+    @GetMapping("/profile/about")
     public String profileAbout(){
         return "/userClient/profileAbout";
     }
+
+    @GetMapping("/profile/history")
+    public String profileHistory(){
+        return"/userClient/profileHistory";
+    }
+
 }
