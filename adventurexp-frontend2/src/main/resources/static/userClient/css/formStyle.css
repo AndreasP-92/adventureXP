@@ -1,5 +1,5 @@
 body{
-    background-image: url("/images/adventure.jpg");
+    background-image: url("/static/images/adventure.jpg");
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-color: #099669;
