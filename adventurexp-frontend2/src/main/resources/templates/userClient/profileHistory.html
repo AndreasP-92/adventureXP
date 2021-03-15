@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lav et Event</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/userClient/formStyle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!--=================== NAVIGATION ============================ -->
+
+</header>
+<main class="container" align="">
+    <!--    </img src="/images/adventure.jpg">-->
+    <!-- === CREATE EVENT === -->
+    <form class="contact w-50" action="/insert/project" method="post">
+        <div class="valid" id="notFilled"></div>
+
+        <h3 class="text-center">Lav et nyt Event</h3>
+
+        <!-- ACTIVITY NAME -->
+        <div class="form-group ml-5 mr-5">
+            <label for="test">Aktivitet navn</label>
+            <input class="form-control" type="text" id="test" name="activity_name" required placeholder="Aktivitetes Navn">
+        </div>
+
+        <!-- ACTIVITY PERIOD START -->
+        <div class="form-group ml-5 mr-5">
+            <label for="start">Aktivitetes Periode Start</label>
+            <input rows="3" class="form-control" type="date" id="start" required name="activity_start" placeholder="Aktivitets Periode Start">
+        </div>
+
+        <!-- Activity Period End -->
+        <div class="form-group ml-5 mr-5">
+            <label for="slut">Aktivitetes Periode Slut</label>
+            <input id="slut" class="form-control" type="date" name="activity_end" required>
+        </div>
+
+        <!-- Minimum Age -->
+        <div class="form-group ml-5 mr-5">
+            <label for="activityAge">Minimum Deltager Alder</label>
+            <input class="form-control" type="number" id="activityAge" name="activity_age" required>
+        </div>
+
+        <!-- Activity Size -->
+        <div class="form-group ml-5 mr-5">
+            <label for="activitySize">Aktivitets Antal Deltagere</label>
+            <input class="form-control" id="activitySize" type="number" name="activity_size" required>
+        </div>
+
+        <!-- Activity Description -->
+        <div class="form-group ml-5 mr-5">
+            <label for="activityDesc">Aktivitetes Beskrivelse</label>
+            <textarea class="form-control" id="activityDesc" rows="3"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Cancel Creation -->
+
+                <a href="/" class="w-50 btn form-button ml-5 mr-5" >Anuller</a>
+            </div>
+            <div class="col-md-6">
+                <!-- SUBMIT -->
+                <button type="submit" class="w-50 btn form-button ml-5 mr-5">Gem</button>
+            </div>
+
+        </div>
+
+    </form>
+</main>
+<footer>
+    <!--=================== Footer ============================ -->
+</footer>
+</body>
+</html>
