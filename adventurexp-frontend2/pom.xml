@@ -36,6 +36,9 @@
     <build>
         <plugins>
             <plugin>
+                <configuration>
+                    <addResources>true</addResources>
+                </configuration>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
