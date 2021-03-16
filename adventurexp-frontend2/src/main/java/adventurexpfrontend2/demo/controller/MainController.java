@@ -16,6 +16,12 @@ public class MainController {
         return "/userClient/createEvent";
     }
 
+    @GetMapping("/register")
+    public String register(){return "/userClient/register";}
+
+    @GetMapping("/booking")
+    public String booking(){return "/userClient/booking";}
+
     @GetMapping("/profile/about")
     public String profileAbout(){
         return "/userClient/profileAbout";
