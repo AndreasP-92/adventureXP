@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/userClient/booking.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!--=================== NAVIGATION ============================ -->
+
+</header>
+<main class="container" align="">
+
+    <!-- === CREATE BOOKING === -->
+    <form class="contact w-50" action="/insert/booking" method="post">
+        <div class="valid" id="notFilled"></div>
+
+        <h3 class="text-center">Lav en Booking</h3>
+
+        <!-- Minimum Age and Activity Size-->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="number" id="activity" name="activity" required placeholder="Vælg Aktivitet"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="guest_number" required placeholder="Antal Gæster"> </div>
+        </div>
+        <!-- Date and Time of Arrival-->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="date" required placeholder="Dato"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="arrival" required placeholder="Ankomst Tid"> </div>
+        </div>
+        <!-- Firstname and Lastname-->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="first_name" required placeholder="Fornavn"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="last_name" required placeholder="Efternavn"> </div>
+        </div>
+        <!-- Phone Number and Email-->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="phone_number" required placeholder="Telefonnummer"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="email" id="test" name="email" required placeholder="Email"> </div>
+        </div>
+
+        <!-- COMMENTS -->
+        <div class="form-group mt-5">
+            <label for="test">Yderligere kommentar og ønsker</label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+
+        <!-- CHECK BOX -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Jeg acceptere</label> <a href="">Bruger Betingelser</a>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="form-group ml-5 mr-5">
+            <button type="submit" class="w-75 btn form-button ml-5 mr-5">Book Nu</button>
+        </div>
+
+        </div>
+
+    </form>
+</main>
+<footer>
+    <!--=================== Footer ============================ -->
+    <div th:replace="userClient/partials/footer :: footerFragment"></div>
+</footer>
+</body>
+</html>
