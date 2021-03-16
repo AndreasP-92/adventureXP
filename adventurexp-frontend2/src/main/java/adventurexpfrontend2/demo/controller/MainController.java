@@ -15,4 +15,33 @@ public class MainController {
     public String createEvent(){
         return "/userClient/createEvent";
     }
+
+    @GetMapping("/register")
+    public String register(){return "/userClient/register";}
+
+    @GetMapping("/booking")
+    public String booking(){return "/userClient/booking";}
+
+    @GetMapping("/profile/about")
+    public String profileAbout(){
+        return "/userClient/profileAbout";
+    }
+
+    @GetMapping("/profile/history")
+    public String profileHistory(){
+        return"/userClient/profileHistory";
+    }
+
+
+    @GetMapping("/login")
+    public String login(){
+        return "/userClient/login";
+    }
+
+    @GetMapping("/contact")
+    public String contact(){
+        return "/userClient/contact";
+    }
+
+
 }
