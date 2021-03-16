@@ -26,4 +26,16 @@ public class MainController {
         return"/userClient/profileHistory";
     }
 
+
+    @GetMapping("/login")
+    public String login(){
+        return "/userClient/login";
+    }
+
+    @GetMapping("/contact")
+    public String contact(){
+        return "/userClient/contact";
+    }
+
+
 }
