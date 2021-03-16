@@ -8,6 +8,5 @@ import java.util.List;
 
 public interface TicketSystemRepository extends JpaRepository<TicketSystem, Integer> {
 
-    @Query("FROM TicketSystem WHERE  = ?1")
-    List<TicketSystem>
+
 }
