@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th = "http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Lav et Event</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="/userClient/formStyle.css" type="text/css" rel="stylesheet">
+    <link href="/userClient/css/formStyle.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <header>
     <!--=================== NAVIGATION ============================ -->
+    <div th:replace="fragments/navbar :: navigation">
 
+    </div>
 </header>
 <main class="container" align="">
 <!--    </img src="/images/adventure.jpg">-->
@@ -18,7 +20,7 @@
         <div class="valid" id="notFilled"></div>
 
         <h3 class="text-center">Lav et nyt Event</h3>
-
+<!--#1ca14b-->
         <!-- ACTIVITY NAME -->
         <div class="form-group ml-5 mr-5">
             <label for="test">Aktivitet navn</label>
@@ -60,7 +62,7 @@
 
                 <a href="/" class="w-50 btn form-button ml-5 mr-5" >Anuller</a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 pl-5">
                 <!-- SUBMIT -->
                 <button type="submit" class="w-50 btn form-button ml-5 mr-5">Gem</button>
             </div>
