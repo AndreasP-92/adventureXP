@@ -11,20 +11,23 @@ public class Activity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int activity_id;
     public String activity_name;
+    private String activity_avail_start;
+    private String activity_avail_end;
+    private String activity_min_age;
+    private String activity_group_size;
     private String activity_desc;
-    private String activity_practicalinfo;
-    private String activity_datetime;
-    private String activity_duration;
+
 
     public Activity() {
     }
 
-    public Activity(String activity_name, String activity_desc, String activity_practicalinfo, String activity_datetime, String activity_duration) {
+    public Activity(String activity_name, String activity_avail_start, String activity_avail_end, String activity_min_age, String activity_group_size, String activity_desc) {
         this.activity_name = activity_name;
+        this.activity_avail_start = activity_avail_start;
+        this.activity_avail_end = activity_avail_end;
+        this.activity_min_age = activity_min_age;
+        this.activity_group_size = activity_group_size;
         this.activity_desc = activity_desc;
-        this.activity_practicalinfo = activity_practicalinfo;
-        this.activity_datetime = activity_datetime;
-        this.activity_duration = activity_duration;
     }
 
     public int getActivity_id() {
@@ -43,6 +46,38 @@ public class Activity {
         this.activity_name = activity_name;
     }
 
+    public String getActivity_avail_start() {
+        return activity_avail_start;
+    }
+
+    public void setActivity_avail_start(String activity_avail_start) {
+        this.activity_avail_start = activity_avail_start;
+    }
+
+    public String getActivity_avail_end() {
+        return activity_avail_end;
+    }
+
+    public void setActivity_avail_end(String activity_avail_end) {
+        this.activity_avail_end = activity_avail_end;
+    }
+
+    public String getActivity_min_age() {
+        return activity_min_age;
+    }
+
+    public void setActivity_min_age(String activity_min_age) {
+        this.activity_min_age = activity_min_age;
+    }
+
+    public String getActivity_group_size() {
+        return activity_group_size;
+    }
+
+    public void setActivity_group_size(String activity_group_size) {
+        this.activity_group_size = activity_group_size;
+    }
+
     public String getActivity_desc() {
         return activity_desc;
     }
@@ -51,39 +86,16 @@ public class Activity {
         this.activity_desc = activity_desc;
     }
 
-    public String getActivity_practicalinfo() {
-        return activity_practicalinfo;
-    }
-
-    public void setActivity_practicalinfo(String activity_practicalinfo) {
-        this.activity_practicalinfo = activity_practicalinfo;
-    }
-
-    public String getActivity_datetime() {
-        return activity_datetime;
-    }
-
-    public void setActivity_datetime(String activity_datetime) {
-        this.activity_datetime = activity_datetime;
-    }
-
-    public String getActivity_duration() {
-        return activity_duration;
-    }
-
-    public void setActivity_duration(String activity_duration) {
-        this.activity_duration = activity_duration;
-    }
-
     @Override
     public String toString() {
         return "Activity{" +
                 "activity_id=" + activity_id +
                 ", activity_name='" + activity_name + '\'' +
+                ", activity_avail_start='" + activity_avail_start + '\'' +
+                ", activity_avail_end='" + activity_avail_end + '\'' +
+                ", activity_min_age='" + activity_min_age + '\'' +
+                ", activity_group_size='" + activity_group_size + '\'' +
                 ", activity_desc='" + activity_desc + '\'' +
-                ", activity_practicalinfo='" + activity_practicalinfo + '\'' +
-                ", activity_datetime='" + activity_datetime + '\'' +
-                ", activity_duration='" + activity_duration + '\'' +
                 '}';
     }
 }

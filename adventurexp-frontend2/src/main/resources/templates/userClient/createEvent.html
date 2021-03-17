@@ -16,7 +16,7 @@
 <main class="container" align="">
 <!--    </img src="/images/adventure.jpg">-->
     <!-- === CREATE EVENT === -->
-    <form class="contact w-50" action="/insert/project" method="post">
+    <form class="contact w-50" action="/insert/project" method="post" id="activityForm">
         <div class="valid" id="notFilled"></div>
 
         <h3 class="text-center">Lav et nyt Event</h3>
@@ -30,31 +30,31 @@
         <!-- ACTIVITY PERIOD START -->
         <div class="form-group ml-5 mr-5">
             <label for="start">Aktivitetes Periode Start</label>
-            <input rows="3" class="form-control" type="date" id="start" required name="activity_start" placeholder="Aktivitets Periode Start">
+            <input rows="3" class="form-control" type="date" id="start" required name="activity_avail_start" placeholder="Aktivitets Periode Start">
         </div>
 
         <!-- Activity Period End -->
         <div class="form-group ml-5 mr-5">
             <label for="slut">Aktivitetes Periode Slut</label>
-            <input id="slut" class="form-control" type="date" name="activity_end" required>
+            <input id="slut" class="form-control" type="date" name="activity_avail_end" required>
         </div>
 
         <!-- Minimum Age -->
         <div class="form-group ml-5 mr-5">
             <label for="activityAge">Minimum Deltager Alder</label>
-            <input class="form-control" type="number" id="activityAge" name="activity_age" required>
+            <input class="form-control" type="number" id="activityAge" name="activity_min_age" required>
         </div>
 
         <!-- Activity Size -->
         <div class="form-group ml-5 mr-5">
             <label for="activitySize">Aktivitets Antal Deltagere</label>
-            <input class="form-control" id="activitySize" type="number" name="activity_size" required>
+            <input class="form-control" id="activitySize" type="number" name="activity_group_size" required>
         </div>
 
         <!-- Activity Description -->
         <div class="form-group ml-5 mr-5">
-            <label for="activityDesc">Aktivitetes Beskrivelse</label>
-            <textarea class="form-control" id="activityDesc" rows="3"></textarea>
+            <label for="activity_desc">Aktivitetes Beskrivelse</label>
+            <textarea class="form-control" id="activity_desc" name="activity_desc" rows="3"></textarea>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -75,4 +75,5 @@
     <!--=================== Footer ============================ -->
 </footer>
 </body>
+<script src="/userClient/js/activity.js"></script>
 </html>

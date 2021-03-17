@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,24 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload">
-      <change afterPath="$PROJECT_DIR$/../adventurexp-frontend/.idea/adventurexp-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/ActivityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/ActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/activities.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/ActivityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/controller/BookingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/model/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/model/Booking.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -82,6 +76,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,6 +90,7 @@
       <workItem from="1615928812877" duration="4379000" />
       <workItem from="1615972648145" duration="45000" />
       <workItem from="1615972854748" duration="3997000" />
+      <workItem from="1615986598013" duration="3776000" />
     </task>
     <task id="LOCAL-00001" summary="backend upload">
       <created>1615929357511</created>
@@ -107,7 +103,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -124,64 +120,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="backend upload" />
     <option name="LAST_COMMIT_MESSAGE" value="backend upload" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1571" y="622" key="#SQL_Dialects" timestamp="1615932455213">
-      <screen x="-1920" y="261" width="1920" height="1040" />
-    </state>
-    <state x="-1571" y="622" key="#SQL_Dialects/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615932455213" />
-    <state x="-1368" y="439" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615929059905">
-      <screen x="-1920" y="261" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="439" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615929059905" />
-    <state x="-1134" y="559" key="#com.intellij.ide.util.MemberChooser" timestamp="1615932668778">
-      <screen x="-1920" y="261" width="1920" height="1040" />
-    </state>
-    <state x="-1134" y="559" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615932668778" />
-    <state x="1048" y="401" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615930110057" />
-    <state width="2517" height="282" key="GridCell.Tab.0.bottom" timestamp="1615976993238">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993238" />
-    <state width="2517" height="282" key="GridCell.Tab.0.center" timestamp="1615976993238">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993238" />
-    <state width="2517" height="282" key="GridCell.Tab.0.left" timestamp="1615976993238">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993238" />
-    <state width="2517" height="282" key="GridCell.Tab.0.right" timestamp="1615976993238">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993238" />
-    <state width="2517" height="282" key="GridCell.Tab.1.bottom" timestamp="1615976993239">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993239" />
-    <state width="2517" height="282" key="GridCell.Tab.1.center" timestamp="1615976993239">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993239" />
-    <state width="2517" height="282" key="GridCell.Tab.1.left" timestamp="1615976993239">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993239" />
-    <state width="2517" height="282" key="GridCell.Tab.1.right" timestamp="1615976993239">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615933010336" />
-    <state width="2517" height="282" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1615976993239" />
-    <state x="-1368" y="514" key="Vcs.Push.Dialog.v2" timestamp="1615929370507">
-      <screen x="-1920" y="261" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="514" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.261.1920.1040@-1920.261.1920.1040" timestamp="1615929370507" />
   </component>
 </project>

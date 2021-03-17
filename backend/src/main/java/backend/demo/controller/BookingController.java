@@ -42,7 +42,5 @@ public class BookingController {
         System.out.println(booking);
 
         return bookingRepository.save(booking);
-
-
     }
 }
