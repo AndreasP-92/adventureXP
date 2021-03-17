@@ -1,1 +1,2 @@
 INSERT INTO booking (booking_name, booking_phone, booking_datetime, booking_activity, booking_paid) VALUES ('Jeffe', 22, '1990-01-01', 'black death', 2500.00);
+INSERT INTO ticket_system (profile_firstname, profile_lastname, profile_mail, ticket_owner, ticket_context, ticket_time_stamp, ticket_active, ticket_taken) VALUES ('Lars', 'Jensen', 'LarsJensen@gmail.com', 'Lars', 'Something Something', '10:53:59', 1, 0);
