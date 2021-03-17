@@ -14,35 +14,35 @@
 <main class="container" align="">
 
     <!-- === CREATE BOOKING === -->
-    <form class="contact w-50" action="/insert/booking" method="post">
+    <form class="contact w-50" id="myForm" action="" method="post">
         <div class="valid" id="notFilled"></div>
 
         <h3 class="text-center">Lav en Booking</h3>
 
         <!-- Minimum Age and Activity Size-->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="number" id="activity" name="activity" required placeholder="Vælg Aktivitet"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="guest_number" required placeholder="Antal Gæster"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="number" id="activity" name="activity"  placeholder="Vælg Aktivitet"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="guest_number"  placeholder="Antal Gæster"> </div>
         </div>
         <!-- Date and Time of Arrival-->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="date" required placeholder="Dato"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="arrival" required placeholder="Ankomst Tid"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="test"  placeholder="Dato"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="arrival"  placeholder="Ankomst Tid"> </div>
         </div>
         <!-- Firstname and Lastname-->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="first_name" required placeholder="Fornavn"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="last_name" required placeholder="Efternavn"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="first_name"  placeholder="Fornavn"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="last_name"  placeholder="Efternavn"> </div>
         </div>
         <!-- Phone Number and Email-->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" id="test" name="phone_number" required placeholder="Telefonnummer"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="email" id="test" name="email" required placeholder="Email"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="phone_number"  placeholder="Telefonnummer"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="email" name="email"  placeholder="Email"> </div>
         </div>
 
         <!-- COMMENTS -->
         <div class="form-group mt-5">
-            <label for="test">Yderligere kommentar og ønsker</label>
+            <label for="comments">Yderligere kommentar og ønsker</label>
             <textarea class="form-control" id="comments" rows="3"></textarea>
         </div>
 
@@ -66,4 +66,5 @@
     <div th:replace="userClient/partials/footer :: footerFragment"></div>
 </footer>
 </body>
+<script src="/userClient/js/booking.js"></script>
 </html>
