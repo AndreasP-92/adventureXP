@@ -24,37 +24,37 @@
         <!-- ACTIVITY NAME -->
         <div class="form-group ml-5 mr-5">
             <label for="activity_name">Aktivitet navn</label>
-            <input class="form-control" type="text" id="activity_name" name="activity_name"  placeholder="Aktivitetes Navn" value="test">
+            <input class="form-control" type="text" id="activity_name" name="activity_name"  placeholder="Aktivitetes Navn" required>
         </div>
 
         <!-- ACTIVITY PERIOD START -->
         <div class="form-group ml-5 mr-5">
-            <label for="start">Aktivitetes Periode Start</label>
-            <input rows="3" class="form-control" type="date" id="start"  name="activity_avail_start" placeholder="Aktivitets Periode Start">
+            <label for="activity_avail_start">Aktivitetes Periode Start</label>
+            <input rows="3" class="form-control" type="date" id="activity_avail_start"  name="activity_avail_start" placeholder="Aktivitets Periode Start" required>
         </div>
 
         <!-- Activity Period End -->
         <div class="form-group ml-5 mr-5">
-            <label for="slut">Aktivitetes Periode Slut</label>
-            <input id="slut" class="form-control" type="date" name="activity_avail_end" >
+            <label for="activity_avail_end">Aktivitetes Periode Slut</label>
+            <input id="activity_avail_end" class="form-control" type="date" name="activity_avail_end" required>
         </div>
 
         <!-- Minimum Age -->
         <div class="form-group ml-5 mr-5">
-            <label for="activityAge">Minimum Deltager Alder</label>
-            <input class="form-control" type="number" id="activityAge" name="activity_min_age" >
+            <label for="activity_min_age">Minimum Deltager Alder</label>
+            <input class="form-control" type="number" id="activity_min_age" name="activity_min_age" required>
         </div>
 
         <!-- Activity Size -->
         <div class="form-group ml-5 mr-5">
-            <label for="activitySize">Aktivitets Antal Deltagere</label>
-            <input class="form-control" id="activitySize" type="number" name="activity_group_size" >
+            <label for="activity_group_size">Aktivitets Antal Deltagere</label>
+            <input class="form-control" id="activity_group_size" type="number" name="activity_group_size"required>
         </div>
 
         <!-- Activity Description -->
         <div class="form-group ml-5 mr-5">
             <label for="activity_desc">Aktivitetes Beskrivelse</label>
-            <textarea class="form-control" id="activity_desc" name="activity_desc" rows="3"></textarea>
+            <textarea required class="form-control" id="activity_desc" name="activity_desc" rows="3"></textarea>
         </div>
 
         <!-- Activity Picture -->
@@ -63,7 +63,7 @@
             <label for="activity_pic">Indsæt billede</label>
 
             <!-- UPLOAD IMAGE -->
-            <input class="form-control-file" id="activity_pic" name="file" type="file">
+            <input class="form-control-file" id="activity_pic" name="file" type="file" required>
         </div>
         <div class="row">
             <div class="col-md-6">

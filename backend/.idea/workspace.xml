@@ -23,6 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload">
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/images/Mig med ramme i cartoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/images/wp7786797-5120x1440-wallpapers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
