@@ -5,11 +5,8 @@ let formValid = document.forms["bookingForm"].checkValidity();
 // alert("test")
 console.log(termsOfUse.value)
 thisForm.addEventListener('submit', async function (e) {
-    // console.log(formValid)
     e.preventDefault();
     const formData = new FormData(thisForm).entries()
-    // if(formValid == false){
-    //     document.getElementById('notFilled').innerHTML = "Please fill all fields";
     if(!termsOfUse.checked){
             document.getElementById('missingCheckbox').innerHTML = "Accepter Bruger betingelserne før booking";
 
@@ -28,7 +25,6 @@ thisForm.addEventListener('submit', async function (e) {
     }
 
 });
-
 
 const myUrl = "http://localhost:5002/select/activities";
 
