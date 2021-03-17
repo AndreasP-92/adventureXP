@@ -39,27 +39,4 @@ public class ActivityController {
 
         return activityRepository.save(activity);
     }
-
-    @PostMapping("/file-upload")
-    @ResponseBody
-    public ResponseEntity<String> fileUpload(MultipartFile file) {
-        try {
-
-            // upload directory - change it to your own
-            String UPLOAD_DIR = "/opt/uploads";
-
-            // create a path from file name
-            Path path = Paths.get(UPLOAD_DIR, file.getOriginalFilename());
-
-            // save the file to `UPLOAD_DIR`
-            // make sure you have permission to write
-            Files.write(path, file.getBytes());
-        }
-        catch (Exception ex) {
-            ex.printStackTrace();
-            return new ResponseEntity<>("Ugyldig fil format!!", HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity<>("Fil uploadet!!", HttpStatus.OK);
-    }
 }
