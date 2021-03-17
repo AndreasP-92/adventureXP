@@ -1,1 +1,4 @@
-INSERT INTO booking (booking_name, booking_phone, booking_datetime, booking_activity, booking_paid) VALUES ('Jeffe', 22, '1990-01-01', 'black death', 2500.00);
+INSERT INTO booking (booking_firstname, booking_phone, booking_datetime, booking_activity, booking_paid) VALUES ('Jeffe', 22, '1990-01-01', 'black death', 2500.00);
+INSERT INTO activity (activity_name, activity_desc, activity_practicalinfo, activity_datetime, activity_duration) VALUES ('Black Death', 'Description Here', '- test -test', '22-22-22', '24H');
+INSERT INTO activity (activity_name, activity_desc, activity_practicalinfo, activity_datetime, activity_duration) VALUES ('Bowling', 'Description Here', '- test -test', '22-22-22', '24H');
+INSERT INTO activity (activity_name, activity_desc, activity_practicalinfo, activity_datetime, activity_duration) VALUES ('Paintball', 'Description Here', '- test -test', '22-22-22', '24H');
