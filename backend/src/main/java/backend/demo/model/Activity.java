@@ -16,18 +16,20 @@ public class Activity {
     private String activity_min_age;
     private String activity_group_size;
     private String activity_desc;
+    private String activity_pic;
 
 
     public Activity() {
     }
 
-    public Activity(String activity_name, String activity_avail_start, String activity_avail_end, String activity_min_age, String activity_group_size, String activity_desc) {
+    public Activity(String activity_name, String activity_avail_start, String activity_avail_end, String activity_min_age, String activity_group_size, String activity_desc, String activity_pic) {
         this.activity_name = activity_name;
         this.activity_avail_start = activity_avail_start;
         this.activity_avail_end = activity_avail_end;
         this.activity_min_age = activity_min_age;
         this.activity_group_size = activity_group_size;
         this.activity_desc = activity_desc;
+        this.activity_pic = activity_pic;
     }
 
     public int getActivity_id() {
@@ -86,6 +88,14 @@ public class Activity {
         this.activity_desc = activity_desc;
     }
 
+    public String getActivity_pic() {
+        return activity_pic;
+    }
+
+    public void setActivity_pic(String activity_pic) {
+        this.activity_pic = activity_pic;
+    }
+
     @Override
     public String toString() {
         return "Activity{" +
@@ -96,6 +106,7 @@ public class Activity {
                 ", activity_min_age='" + activity_min_age + '\'' +
                 ", activity_group_size='" + activity_group_size + '\'' +
                 ", activity_desc='" + activity_desc + '\'' +
+                ", activity_pic='" + activity_pic + '\'' +
                 '}';
     }
 }

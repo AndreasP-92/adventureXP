@@ -6,8 +6,13 @@ import backend.demo.repository.ActivityRepository;
 import backend.demo.repository.BookingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 @RestController
@@ -33,5 +38,28 @@ public class ActivityController {
         System.out.println(activity);
 
         return activityRepository.save(activity);
+    }
+
+    @PostMapping("/file-upload")
+    @ResponseBody
+    public ResponseEntity<String> fileUpload(MultipartFile file) {
+        try {
+
+            // upload directory - change it to your own
+            String UPLOAD_DIR = "/opt/uploads";
+
+            // create a path from file name
+            Path path = Paths.get(UPLOAD_DIR, file.getOriginalFilename());
+
+            // save the file to `UPLOAD_DIR`
+            // make sure you have permission to write
+            Files.write(path, file.getBytes());
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+            return new ResponseEntity<>("Ugyldig fil format!!", HttpStatus.BAD_REQUEST);
+        }
+
+        return new ResponseEntity<>("Fil uploadet!!", HttpStatus.OK);
     }
 }
