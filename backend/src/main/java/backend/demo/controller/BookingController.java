@@ -16,7 +16,7 @@ public class BookingController {
         this.bookingRepository = bookingRepository;
     }
 
-    @GetMapping("/bookings")
+    @GetMapping("/select/bookings")
     public List<Booking> findAllBookings(){
         List<Booking> bookings = bookingRepository.findAll();
         return bookings;
@@ -36,7 +36,7 @@ public class BookingController {
         return bookingRepository.save(pers);
     }
 
-    @PostMapping(value="/insert", consumes = "application/json")
+    @PostMapping(value="/insert/booking", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public Booking insertBooking(@RequestBody Booking booking){
         System.out.println(booking);
