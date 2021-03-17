@@ -1,2 +1,6 @@
+INSERT INTO booking (booking_firstname, booking_phone, booking_datetime, booking_activity, booking_paid) VALUES ('Jeffe', 22, '1990-01-01', 'black death', 2500.00);
+INSERT INTO activity (activity_name, activity_avail_start, activity_avail_end, activity_min_age, activity_group_size, activity_desc, activity_pic) VALUES ('Black Death', '22-22-22', '30-30-30', '18', '10', 'Description here', '/images/events/Gokart.jpg');
+INSERT INTO activity (activity_name, activity_avail_start, activity_avail_end, activity_min_age, activity_group_size, activity_desc, activity_pic) VALUES ('Bowling', '22-22-22', '30-30-30', '18', '10', 'Description here', '/images/events/Paintball.jpg');
+INSERT INTO activity (activity_name, activity_avail_start, activity_avail_end, activity_min_age, activity_group_size, activity_desc, activity_pic) VALUES ('Paintball', '22-22-22', '30-30-30', '18', '10', 'Description here', '/images/events/Paintball.jpg');
 INSERT INTO booking (booking_name, booking_phone, booking_datetime, booking_activity, booking_paid) VALUES ('Jeffe', 22, '1990-01-01', 'black death', 2500.00);
 INSERT INTO ticket_system (profile_firstname, profile_lastname, profile_mail, ticket_owner, ticket_context, ticket_time_stamp, ticket_active, ticket_taken) VALUES ('Lars', 'Jensen', 'LarsJensen@gmail.com', 'Lars', 'Something Something', '10:53:59', 1, 0);

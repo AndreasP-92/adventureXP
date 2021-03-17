@@ -13,46 +13,57 @@
 </header>
 <main class="container" align="">
 
-    <!-- === CREATE BOOKING === -->
-    <form class="contact w-50" id="myForm" action="" method="post">
+<!-- === CREATE BOOKING FORM === -->
+    <form class="contact w-50" id="bookingForm" method="post">
         <div class="valid" id="notFilled"></div>
 
         <h3 class="text-center">Lav en Booking</h3>
 
-        <!-- Minimum Age and Activity Size-->
+<!-- === ACTIVITY + GUESTS === -->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="number" id="activity" name="activity"  placeholder="Vælg Aktivitet"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="guest_number"  placeholder="Antal Gæster"> </div>
-        </div>
-        <!-- Date and Time of Arrival-->
-        <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="test"  placeholder="Dato"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="arrival"  placeholder="Ankomst Tid"> </div>
-        </div>
-        <!-- Firstname and Lastname-->
-        <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="first_name"  placeholder="Fornavn"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="last_name"  placeholder="Efternavn"> </div>
-        </div>
-        <!-- Phone Number and Email-->
-        <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="phone_number"  placeholder="Telefonnummer"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="email" name="email"  placeholder="Email"> </div>
+            <div class="col-sm-6"><select name="booking_activity" class="activiySelector form-control"><option>Vælg en aktivitet</option></select></div>
+            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="booking_guests" required  placeholder="Antal Gæster"> </div>
         </div>
 
-        <!-- COMMENTS -->
+<!-- ==== DURATION + DATE ====-->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="date" min="2021-03-01" max="2021-03-20" name="booking_datetime" required placeholder="Dato"> </div>
+            <div class="col-sm-6" align="center">
+                <select class="form-control" name="booking_duration">
+                    <option value="12:00">Vælg Varigheden</option>
+                    <option value="12:00">12 Timer</option>
+                    <option value="24:00">24 Timer</option>
+                    <option value="48:00">48 Timer</option>
+                </select>
+            </div>
+        </div>
+
+<!-- === FIRSTNAME + LASTNAME === -->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="booking_firstname" required placeholder="Fornavn"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="booking_lastname" required placeholder="Efternavn"> </div>
+        </div>
+
+<!-- === PHONE + MAIL === -->
+        <div class="row mt-5">
+            <div class="col-sm-6" align="center"><input class="form-control" type="number" name="booking_phone" required placeholder="Telefonnummer"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="email" name="booking_mail" required placeholder="Email"> </div>
+        </div>
+
+<!-- === COMMENTS === -->
         <div class="form-group mt-5">
             <label for="comments">Yderligere kommentar og ønsker</label>
-            <textarea class="form-control" id="comments" rows="3"></textarea>
+            <textarea name="booking_context" class="form-control" id="comments" rows="3"></textarea>
         </div>
 
-        <!-- CHECK BOX -->
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">Jeg acceptere</label> <a href="">Bruger Betingelser</a>
+<!-- === CHECK BOX === -->
+        <div class="form-check" align="center">
+            <div id="missingCheckbox"></div>
+            <input class="form-check-input" type="checkbox" id="termsOfUse">
+            <label class="form-check-label" for="termsOfUse">Jeg acceptere</label> <a href="">Bruger Betingelser</a>
         </div>
 
-        <!-- SUBMIT -->
+<!-- === SUBMIT === -->
         <div class="form-group ml-5 mr-5">
             <button type="submit" class="w-75 btn form-button ml-5 mr-5">Book Nu</button>
         </div>
