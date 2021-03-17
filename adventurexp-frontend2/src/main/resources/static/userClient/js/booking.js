@@ -1,16 +1,32 @@
-const thisForm = document.getElementById('myForm');
+const thisForm = document.getElementById('bookingForm');
+const termsOfUse = document.getElementById('termsOfUse');
+let formValid = document.forms["bookingForm"].checkValidity();
+
 // alert("test")
+console.log(termsOfUse.value)
 thisForm.addEventListener('submit', async function (e) {
+    // console.log(formValid)
     e.preventDefault();
     const formData = new FormData(thisForm).entries()
-    const response = await fetch('http://localhost:5002/insert/booking', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(formData))
-    });
+    // if(formValid == false){
+    //     document.getElementById('notFilled').innerHTML = "Please fill all fields";
+    if(!termsOfUse.checked){
+            document.getElementById('missingCheckbox').innerHTML = "Accepter Bruger betingelserne før booking";
 
-    const result = await response.json();
-    console.log(result)
+        // alert("Accepter Bruger Betingelserne før booking")
+    } else if(termsOfUse.checked){
+        const response = await fetch('http://localhost:5002/insert/booking', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(formData)),
+        });
+
+        const result = await response.json();
+        console.log(result)
+
+        window.location.href = "http://localhost:8080/"
+    }
+
 });
 
 
@@ -41,7 +57,7 @@ function fillDropDown(item, index){
     const activitySelector = document.querySelector('.activiySelector')
 
     let el = document.createElement("option");
-    el.textContent = item.activity_name;
+    el.textContent = item;
     console.log("ITEM=====",item)
     el.value = item;
     activitySelector.appendChild(el);

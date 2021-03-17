@@ -12,27 +12,29 @@ public class Booking {
     private String booking_activity;
     private String booking_guests;
     private String booking_datetime;
-    private String booking_arrival;
+    private String booking_duration;
     private String booking_firstname;
     private String booking_lastname;
     private String booking_phone;
     private String booking_mail;
     @Column(precision=10, scale=2)
     private double booking_paid;
+    private String booking_context;
 
     public Booking() {
     }
 
-    public Booking(String booking_activity, String booking_guests, String booking_datetime, String booking_arrival, String booking_firstname, String booking_lastname, String booking_phone, String booking_mail, double booking_paid) {
+    public Booking(String booking_activity, String booking_guests, String booking_datetime, String booking_duration, String booking_firstname, String booking_lastname, String booking_phone, String booking_mail, double booking_paid, String booking_context) {
         this.booking_activity = booking_activity;
         this.booking_guests = booking_guests;
         this.booking_datetime = booking_datetime;
-        this.booking_arrival = booking_arrival;
+        this.booking_duration = booking_duration;
         this.booking_firstname = booking_firstname;
         this.booking_lastname = booking_lastname;
         this.booking_phone = booking_phone;
         this.booking_mail = booking_mail;
         this.booking_paid = booking_paid;
+        this.booking_context = booking_context;
     }
 
     public int getBooking_id() {
@@ -67,12 +69,12 @@ public class Booking {
         this.booking_datetime = booking_datetime;
     }
 
-    public String getBooking_arrival() {
-        return booking_arrival;
+    public String getBooking_duration() {
+        return booking_duration;
     }
 
-    public void setBooking_arrival(String booking_arrival) {
-        this.booking_arrival = booking_arrival;
+    public void setBooking_duration(String booking_duration) {
+        this.booking_duration = booking_duration;
     }
 
     public String getBooking_firstname() {
@@ -115,6 +117,14 @@ public class Booking {
         this.booking_paid = booking_paid;
     }
 
+    public String getBooking_context() {
+        return booking_context;
+    }
+
+    public void setBooking_context(String booking_context) {
+        this.booking_context = booking_context;
+    }
+
     @Override
     public String toString() {
         return "Booking{" +
@@ -122,12 +132,13 @@ public class Booking {
                 ", booking_activity='" + booking_activity + '\'' +
                 ", booking_guests='" + booking_guests + '\'' +
                 ", booking_datetime='" + booking_datetime + '\'' +
-                ", booking_arrival='" + booking_arrival + '\'' +
+                ", booking_duration='" + booking_duration + '\'' +
                 ", booking_firstname='" + booking_firstname + '\'' +
                 ", booking_lastname='" + booking_lastname + '\'' +
                 ", booking_phone='" + booking_phone + '\'' +
                 ", booking_mail='" + booking_mail + '\'' +
                 ", booking_paid=" + booking_paid +
+                ", booking_context='" + booking_context + '\'' +
                 '}';
     }
 }
