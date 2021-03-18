@@ -6,10 +6,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface BookingRepository extends JpaRepository<Booking, Long> {
-<<<<<<< HEAD
 
-=======
+
+
 //    public Booking findBy(String activity);
     public Booking findByActivity(String activity);
->>>>>>> main
+
+    List<Booking> findAllByMail(String mail);
 }

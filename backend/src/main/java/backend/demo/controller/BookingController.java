@@ -22,6 +22,12 @@ public class BookingController {
         return bookings;
     }
 
+    @GetMapping("/select/all/bookings/{mail}")
+    public List findAllBookingsWMail(@PathVariable String mail){
+        List<Booking> bookingList = bookingRepository.findAllByMail(mail);
+        return bookingList;
+    }
+
 //    @GetMapping("/select/bookings/{test}")
 //    public Booking findAllBookings(@PathVariable String test){
 //        Booking bookings = bookingRepository.findByBooking_activity(test);
