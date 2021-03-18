@@ -10,24 +10,16 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int user_id;
+    private int id;
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
-
-    private String user_mail;
-    private String user_password;
-    private int user_enabled;
+    private String mail;
+    private String password;
+    private int enabled;
 
 
-    @OneToMany
-    @JoinColumn(name = "user_id")
-    private Set<Profile> profiles = new HashSet<>();
+//    @OneToMany
+//    @JoinColumn(name = "id")
+//    private Set<Profile> profiles = new HashSet<>();
 
 //    @ManyToOne
 //    @JsonBackReference
@@ -36,51 +28,53 @@ public class User {
     public User() {
     }
 
-    public User(String user_mail, String user_password, int user_enabled) {
-        this.user_mail = user_mail;
-        this.user_password = user_password;
-        this.user_enabled = user_enabled;
+    public User(String mail, String password, int enabled, Set<Profile> profiles) {
+        this.mail = mail;
+        this.password = password;
+        this.enabled = enabled;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(int enabled) {
+        this.enabled = enabled;
     }
 
 
-    public String getUser_mail() {
-        return user_mail;
-    }
-
-    public void setUser_mail(String user_mail) {
-        this.user_mail = user_mail;
-    }
-
-    public String getUser_password() {
-        return user_password;
-    }
-
-    public void setUser_password(String user_password) {
-        this.user_password = user_password;
-    }
-
-    public int getUser_enabled() {
-        return user_enabled;
-    }
-
-    public void setUser_enabled(int user_enabled) {
-        this.user_enabled = user_enabled;
-    }
-    public Set<Profile> getProfiles() {
-        return profiles;
-    }
-
-    public void setProfiles(Set<Profile> profiles) {
-        this.profiles = profiles;
-    }
 
     @Override
     public String toString() {
         return "User{" +
-                "user_id=" + user_id +
-                ", user_mail='" + user_mail + '\'' +
-                ", user_password='" + user_password + '\'' +
-                ", user_enabled=" + user_enabled +
+                "id=" + id +
+                ", mail='" + mail + '\'' +
+                ", password='" + password + '\'' +
+                ", enabled=" + enabled +
                 '}';
     }
 }

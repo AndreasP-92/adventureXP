@@ -16,33 +16,23 @@ public class BookingController {
         this.bookingRepository = bookingRepository;
     }
 
-    @GetMapping("/bookings")
+    @GetMapping("/select/bookings")
     public List<Booking> findAllBookings(){
         List<Booking> bookings = bookingRepository.findAll();
         return bookings;
     }
 
-//    @PostMapping(value="/newauthor", consumes = "application/json")
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public Author postAuthor(@RequestBody Author author) {
-//        System.out.println(author);
-//        return authorRepository.save(author);
+//    @GetMapping("/select/bookings/{test}")
+//    public Booking findAllBookings(@PathVariable String test){
+//        Booking bookings = bookingRepository.findByBooking_activity(test);
+//        return bookings;
 //    }
 
-    @PostMapping(value="/persons", consumes = "application/json")
-    @ResponseStatus(HttpStatus.CREATED)
-    public Booking postPerson(@RequestBody Booking pers){
-        System.out.println(pers);
-        return bookingRepository.save(pers);
-    }
-
-    @PostMapping(value="/insert", consumes = "application/json")
+    @PostMapping(value="/insert/booking", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public Booking insertBooking(@RequestBody Booking booking){
         System.out.println(booking);
 
         return bookingRepository.save(booking);
-
-
     }
 }
