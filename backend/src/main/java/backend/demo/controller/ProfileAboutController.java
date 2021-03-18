@@ -31,11 +31,11 @@ public class ProfileAboutController {
 //        List<ProfileAbout> profileAboutOneMail = profileAboutRepository.findByUser_mail(mail);
 //        return profileAboutOneMail;
 
-    @GetMapping("/select/one/profile/about/{mail}")
-    public ProfileAbout findByUserMail(@PathVariable String mail){
-        ProfileAbout profileAboutOneMail = profileAboutRepository.findByUser_mail(mail);
-        return profileAboutOneMail;
-    }
+//    @GetMapping("/select/one/profile/about/{mail}")
+//    public ProfileAbout findByUserMail(@PathVariable String mail){
+//        ProfileAbout profileAboutOneMail = profileAboutRepository.findByUser_mail(mail);
+//        return profileAboutOneMail;
+//    }
 
 
     @PostMapping(value="/profile/abouts", consumes = "application/json")
