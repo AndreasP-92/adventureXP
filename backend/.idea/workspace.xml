@@ -23,10 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload">
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/ProfileHistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/ProfileHist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/ProfileHistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/ActivityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,6 +68,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="backend.demo.DemoApplication" />
@@ -86,7 +102,7 @@
       <workItem from="1615972648145" duration="45000" />
       <workItem from="1615972854748" duration="3997000" />
       <workItem from="1615986598013" duration="9334000" />
-      <workItem from="1616059650506" duration="2505000" />
+      <workItem from="1616059650506" duration="7138000" />
     </task>
     <task id="LOCAL-00001" summary="backend upload">
       <created>1615929357511</created>
