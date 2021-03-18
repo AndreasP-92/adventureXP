@@ -13,12 +13,12 @@ public class TicketSystem {
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private int ticket_id;
 
-        private String ticket_owner;
-        private String ticket_context;
-        private String ticket_timeStamp;
-        private String profile_firstname;
-        private String profile_lastname;
-        private String profile_mail;
+        private String owner;
+        private String context;
+        private String timeStamp;
+        private String firstname;
+        private String lastname;
+        private String mail;
 
     @Column(name="ticket_active", nullable = false, columnDefinition="INT NOT NULL DEFAULT 1")
     private int ticket_active;
@@ -27,66 +27,74 @@ public class TicketSystem {
 
 
 
-        public TicketSystem() {
-        }
+    public TicketSystem() {
+    }
 
-    public TicketSystem(String ticket_owner, String ticket_context, String ticket_timeStamp, String profile_firstname, String profile_lastname, String profile_mail, int ticket_active, int ticket_taken) {
-        this.ticket_owner = ticket_owner;
-        this.ticket_context = ticket_context;
-        this.ticket_timeStamp = ticket_timeStamp;
-        this.profile_firstname = profile_firstname;
-        this.profile_lastname = profile_lastname;
-        this.profile_mail = profile_mail;
+    public TicketSystem(String owner, String context, String timeStamp, String firstname, String lastname, String mail, int ticket_active, int ticket_taken) {
+        this.owner = owner;
+        this.context = context;
+        this.timeStamp = timeStamp;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.mail = mail;
         this.ticket_active = ticket_active;
         this.ticket_taken = ticket_taken;
     }
 
-    public String getTicket_owner() {
-        return ticket_owner;
+    public int getTicket_id() {
+        return ticket_id;
     }
 
-    public void setTicket_owner(String ticket_owner) {
-        this.ticket_owner = ticket_owner;
+    public void setTicket_id(int ticket_id) {
+        this.ticket_id = ticket_id;
     }
 
-    public String getTicket_context() {
-        return ticket_context;
+    public String getOwner() {
+        return owner;
     }
 
-    public void setTicket_context(String ticket_context) {
-        this.ticket_context = ticket_context;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
-    public String getTicket_timeStamp() {
-        return ticket_timeStamp;
+    public String getContext() {
+        return context;
     }
 
-    public void setTicket_timeStamp(String ticket_timeStamp) {
-        this.ticket_timeStamp = ticket_timeStamp;
+    public void setContext(String context) {
+        this.context = context;
     }
 
-    public String getProfile_firstname() {
-        return profile_firstname;
+    public String getTimeStamp() {
+        return timeStamp;
     }
 
-    public void setProfile_firstname(String profile_firstname) {
-        this.profile_firstname = profile_firstname;
+    public void setTimeStamp(String timeStamp) {
+        this.timeStamp = timeStamp;
     }
 
-    public String getProfile_lastname() {
-        return profile_lastname;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setProfile_lastname(String profile_lastname) {
-        this.profile_lastname = profile_lastname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getProfile_mail() {
-        return profile_mail;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setProfile_mail(String profile_mail) {
-        this.profile_mail = profile_mail;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     public int getTicket_active() {
@@ -109,12 +117,12 @@ public class TicketSystem {
     public String toString() {
         return "TicketSystem{" +
                 "ticket_id=" + ticket_id +
-                ", ticket_owner='" + ticket_owner + '\'' +
-                ", ticket_context='" + ticket_context + '\'' +
-                ", ticket_timeStamp='" + ticket_timeStamp + '\'' +
-                ", profile_firstname='" + profile_firstname + '\'' +
-                ", profile_lastname='" + profile_lastname + '\'' +
-                ", profile_mail='" + profile_mail + '\'' +
+                ", owner='" + owner + '\'' +
+                ", context='" + context + '\'' +
+                ", timeStamp='" + timeStamp + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", mail='" + mail + '\'' +
                 ", ticket_active=" + ticket_active +
                 ", ticket_taken=" + ticket_taken +
                 '}';

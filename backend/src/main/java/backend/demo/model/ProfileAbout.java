@@ -11,50 +11,50 @@ public class ProfileAbout {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int user_id;
+    private int id;
 
-    private String user_mail;
-    private String user_password;
+    private String mail;
+    private String password;
 
 
     public ProfileAbout() {
     }
 
-    public ProfileAbout(String user_mail, String user_password) {
-        this.user_mail = user_mail;
-        this.user_password = user_password;
+    public ProfileAbout(String mail, String password) {
+        this.mail = mail;
+        this.password = password;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public int getId() {
+        return id;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getUser_mail() {
-        return user_mail;
+    public String getMail() {
+        return mail;
     }
 
-    public void setUser_mail(String user_mail) {
-        this.user_mail = user_mail;
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
-    public String getUser_password() {
-        return user_password;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUser_password(String user_password) {
-        this.user_password = user_password;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
-        return "ProfileABout{" +
-                "user_id=" + user_id +
-                ", user_mail='" + user_mail + '\'' +
-                ", user_password='" + user_password + '\'' +
+        return "ProfileAbout{" +
+                "id=" + id +
+                ", mail='" + mail + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

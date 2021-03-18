@@ -10,20 +10,10 @@ import java.util.Set;
 public class Profile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int profile_id;
-
-    public int getProfile_id() {
-        return profile_id;
-    }
-
-    public void setProfile_id(int profile_id) {
-        this.profile_id = profile_id;
-    }
-
-
-    private String profile_firstname;
-    private String profile_lastname;
-    private int profile_phone;
+    private int id;
+    private String firstname;
+    private String lastname;
+    private int phone;
 
 //    @OneToMany
 //    @JoinColumn(name = "profile_id")
@@ -35,54 +25,61 @@ public class Profile {
     public Profile() {
     }
 
-    public Profile(String profile_firstname, String profile_lastname, int profile_phone) {
-        this.profile_firstname = profile_firstname;
-        this.profile_lastname = profile_lastname;
-        this.profile_phone = profile_phone;
+    public Profile(String firstname, String lastname, int phone, User user) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phone = phone;
+        this.user = user;
     }
 
-
-    public String getProfile_firstname() {
-        return profile_firstname;
+    public int getId() {
+        return id;
     }
 
-    public void setProfile_firstname(String profile_firstname) {
-        this.profile_firstname = profile_firstname;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getProfile_lastname() {
-        return profile_lastname;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setProfile_lastname(String profile_lastname) {
-        this.profile_lastname = profile_lastname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public int getProfile_phone() {
-        return profile_phone;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setProfile_phone(int profile_phone) {
-        this.profile_phone = profile_phone;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-//    public Set<User> getUsers() {
-//        return users;
-//    }
-//
-//    public void setUsers(Set<User> users) {
-//        this.users = users;
-//    }
-//    }
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     @Override
     public String toString() {
         return "Profile{" +
-                "profile_id=" + profile_id +
-                ", profile_firstname='" + profile_firstname + '\'' +
-                ", profile_lastname='" + profile_lastname + '\'' +
-                ", profile_phone=" + profile_phone +
-
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", phone=" + phone +
+                ", user=" + user +
                 '}';
     }
 }

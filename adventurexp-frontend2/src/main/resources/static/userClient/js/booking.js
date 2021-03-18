@@ -19,9 +19,8 @@ thisForm.addEventListener('submit', async function (e) {
     }
 
 });
-
-
-const myUrl = `http://localhost:5002/select/activities`;
+const mail = "and@and";
+const myUrl = `http://localhost:5002/select/activities/${mail}`;
 
 const requestOptions = {
     'content-type': 'application/json',
@@ -53,3 +52,13 @@ function fillDropDown(item, index){
     el.value = item;
     activitySelector.appendChild(el);
 }
+
+
+
+    // .then(response => {
+    //     console.log(response.json())
+    //     return  response.status + response.statusText;
+    //     //return response.statusText;
+    //
+    // }).catch(err => {console.log("err="+err); return "fejl";})
+    // .then(alert);
