@@ -11,23 +11,23 @@ public class Activity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
     public String name;
-    public String start;
-    public String end;
+    public String starts;
+    public String ends;
     public String age;
     public String size;
-    public String desc;
+    public String description;
     public String pic;
 
     public Activity() {
     }
 
-    public Activity(String name, String start, String end, String age, String size, String desc, String pic) {
+    public Activity(String name, String starts, String ends, String age, String size, String description, String pic) {
         this.name = name;
-        this.start = start;
-        this.end = end;
+        this.starts = starts;
+        this.ends = ends;
         this.age = age;
         this.size = size;
-        this.desc = desc;
+        this.description = description;
         this.pic = pic;
     }
 
@@ -47,20 +47,20 @@ public class Activity {
         this.name = name;
     }
 
-    public String getStart() {
-        return start;
+    public String getStarts() {
+        return starts;
     }
 
-    public void setStart(String start) {
-        this.start = start;
+    public void setStarts(String starts) {
+        this.starts = starts;
     }
 
-    public String getEnd() {
-        return end;
+    public String getEnds() {
+        return ends;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setEnds(String ends) {
+        this.ends = ends;
     }
 
     public String getAge() {
@@ -79,12 +79,12 @@ public class Activity {
         this.size = size;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getPic() {
@@ -100,11 +100,11 @@ public class Activity {
         return "Activity{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", start='" + start + '\'' +
-                ", end='" + end + '\'' +
+                ", starts='" + starts + '\'' +
+                ", ends='" + ends + '\'' +
                 ", age='" + age + '\'' +
                 ", size='" + size + '\'' +
-                ", desc='" + desc + '\'' +
+                ", description='" + description + '\'' +
                 ", pic='" + pic + '\'' +
                 '}';
     }
