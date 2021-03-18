@@ -38,7 +38,7 @@ public class MainController {
         return "/userClient/profileAbout";
     }
 
-    @GetMapping("/profile/history")
+    @GetMapping("/profile/history/{mail}")
     public String profileHistory(){
         return"/userClient/profileHistory";
     }
@@ -49,7 +49,7 @@ public class MainController {
         return "/userClient/login";
     }
 
-    @GetMapping("/contact")
+    @GetMapping("/contact/")
     public String contact(){
         return "/userClient/contact";
     }
