@@ -22,20 +22,6 @@ public class BookingController {
         return bookings;
     }
 
-//    @PostMapping(value="/newauthor", consumes = "application/json")
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public Author postAuthor(@RequestBody Author author) {
-//        System.out.println(author);
-//        return authorRepository.save(author);
-//    }
-
-    @PostMapping(value="/persons", consumes = "application/json")
-    @ResponseStatus(HttpStatus.CREATED)
-    public Booking postPerson(@RequestBody Booking pers){
-        System.out.println(pers);
-        return bookingRepository.save(pers);
-    }
-
     @PostMapping(value="/insert/booking", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public Booking insertBooking(@RequestBody Booking booking){
