@@ -23,40 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/User2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/UserRepository2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/demo/service/ProfileAboutService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend2/src/main/java/com/example/demo/model/ProfileAbout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend3/src/main/java/com/example/demo/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend3/src/main/java/com/example/demo/controller/ProfileAoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend3/src/main/java/com/example/demo/model/Profile_about.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend3/src/main/java/com/example/demo/repository/ProfileAboutRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend3/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/ProfileAbout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/ProfileAbout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/TicketSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/TicketSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/controller/BookingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/model/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/model/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/repository/BookingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/repository/BookingRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
-    <list id="80128adb-7480-4665-b0e5-5d4142c53817" name="Revert &quot;update&quot;" comment="Revert &quot;update&quot;&#10;&#10;This reverts commit a29086ff">
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/profileHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/profileHistory.html" afterDir="false" />
-    </list>
+    <list id="80128adb-7480-4665-b0e5-5d4142c53817" name="Revert &quot;update&quot;" comment="Revert &quot;update&quot;&#10;&#10;This reverts commit a29086ff" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,10 +123,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="backend upload" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1616098713223">
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1616099202473">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098713223" />
+    <state x="1085" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099202473" />
     <state x="845" y="266" key="CommitChangelistDialog2" timestamp="1616095947883">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -200,5 +171,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1168" y="568" width="682" height="504" key="MultipleFileMergeDialog/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616095940142" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1616098933628">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098933628" />
   </component>
 </project>
