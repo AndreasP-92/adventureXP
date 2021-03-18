@@ -9,12 +9,10 @@ const activity_desc = document.getElementById('activity_desc');
 
 
 
-alert("test")
 thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
-    const formData = new FormData(thisForm).entries()
     const filename = activity_pic.files[0].name;
-    console.log(filename)
+
 
     fetch('http://localhost:5002/insert/activity', {
         method: 'POST',
@@ -37,7 +35,6 @@ thisForm.addEventListener('submit', async function (e) {
         return Promise.reject(response);
     }).then(function (data) {
         thisForm.submit();
-        console.log(data);
     }).catch(function (error) {
         console.warn('Something went wrong.', error);
 

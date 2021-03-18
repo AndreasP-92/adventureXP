@@ -35,7 +35,6 @@ public class ActivityController {
     @PostMapping(value="/insert/activity", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public Activity insertActivity(@RequestBody Activity activity){
-        System.out.println(activity);
 
         return activityRepository.save(activity);
     }
