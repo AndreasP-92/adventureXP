@@ -22,12 +22,12 @@
 <!-- === ACTIVITY + GUESTS === -->
         <div class="row mt-5">
             <div class="col-sm-6"><select name="booking_activity" class="activiySelector form-control"><option>Vælg en aktivitet</option></select></div>
-            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="booking_guests" required  placeholder="Antal Gæster"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" id="GuestNumber" type="number" name="guests" required  placeholder="Antal Gæster"> </div>
         </div>
 
 <!-- ==== DURATION + DATE ====-->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="date" min="2021-03-01" max="2021-03-20" name="booking_datetime" required placeholder="Dato"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="date" min="2021-03-01" max="2021-03-20" name="datetime" required placeholder="Dato"> </div>
             <div class="col-sm-6" align="center">
                 <select class="form-control" name="booking_duration">
                     <option value="12:00">Vælg Varigheden</option>
@@ -40,20 +40,20 @@
 
 <!-- === FIRSTNAME + LASTNAME === -->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="booking_firstname" required placeholder="Fornavn"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="booking_lastname" required placeholder="Efternavn"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="firstname" required placeholder="Fornavn"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="text" name="lastname" required placeholder="Efternavn"> </div>
         </div>
 
 <!-- === PHONE + MAIL === -->
         <div class="row mt-5">
-            <div class="col-sm-6" align="center"><input class="form-control" type="number" name="booking_phone" required placeholder="Telefonnummer"> </div>
-            <div class="col-sm-6" align="center"><input class="form-control" type="email" name="booking_mail" required placeholder="Email"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="number" name="phone" required placeholder="Telefonnummer"> </div>
+            <div class="col-sm-6" align="center"><input class="form-control" type="email" name="mail" required placeholder="Email"> </div>
         </div>
 
 <!-- === COMMENTS === -->
         <div class="form-group mt-5">
             <label for="comments">Yderligere kommentar og ønsker</label>
-            <textarea name="booking_context" class="form-control" id="comments" rows="3"></textarea>
+            <textarea name="context" class="form-control" id="comments" rows="3"></textarea>
         </div>
 
 <!-- === CHECK BOX === -->

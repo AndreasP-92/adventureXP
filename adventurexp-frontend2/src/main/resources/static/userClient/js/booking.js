@@ -37,7 +37,7 @@ fetch(myUrl, requestOptions)
 
 function gotActivityData(data){
     console.log('activities====',data)
-    const activitiesMap = data.map(dd => dd.activity_name);
+    const activitiesMap = data.map(dd => dd.name);
     console.log('activitiesMap====',activitiesMap)
     activitiesMap.forEach(fillDropDown)
 
