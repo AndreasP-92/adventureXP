@@ -1,5 +1,4 @@
 const thisForm = document.getElementById('ticketForm');
-alert("test")
 thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
     const formData = new FormData(thisForm).entries()
@@ -12,3 +11,5 @@ thisForm.addEventListener('submit', async function (e) {
     const result = await response.json();
     console.log(result)
 });
+
+
