@@ -33,12 +33,12 @@ public class MainController {
     @GetMapping("/booking")
     public String booking(){return "/userClient/booking";}
 
-    @GetMapping("/profile/about")
+    @GetMapping("/profile/about/{mail}")
     public String profileAbout(){
         return "/userClient/profileAbout";
     }
 
-    @GetMapping("/profile/history")
+    @GetMapping("/profile/history/{mail}")
     public String profileHistory(){
         return"/userClient/profileHistory";
     }
@@ -49,7 +49,7 @@ public class MainController {
         return "/userClient/login";
     }
 
-    @GetMapping("/contact")
+    @GetMapping("/contact/")
     public String contact(){
         return "/userClient/contact";
     }

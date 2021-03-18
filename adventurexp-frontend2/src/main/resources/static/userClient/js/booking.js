@@ -1,16 +1,12 @@
 const thisForm = document.getElementById('bookingForm');
 const termsOfUse = document.getElementById('termsOfUse');
-let formValid = document.forms["bookingForm"].checkValidity();
 
-// alert("test")
-console.log(termsOfUse.value)
 thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
     const formData = new FormData(thisForm).entries()
+
     if(!termsOfUse.checked){
             document.getElementById('missingCheckbox').innerHTML = "Accepter Bruger betingelserne før booking";
-
-        // alert("Accepter Bruger Betingelserne før booking")
     } else if(termsOfUse.checked){
         const response = await fetch('http://localhost:5002/insert/booking', {
             method: 'POST',
@@ -20,16 +16,11 @@ thisForm.addEventListener('submit', async function (e) {
 
         const result = await response.json();
         console.log(result)
-
-        window.location.href = "http://localhost:8080/"
     }
 
 });
-
-thePath = window.location.pathname;
-const email = thePath.substring(thePath.lastIndexOf('/')+1)
-
-const myUrl = "http://localhost:5002/select/activities";
+const mail = "and@and";
+const myUrl = `http://localhost:5002/select/activities/${mail}`;
 
 const requestOptions = {
     'content-type': 'application/json',
