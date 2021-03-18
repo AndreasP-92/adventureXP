@@ -23,8 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload">
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/profileabout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/profileabout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/booking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/createEvent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/model/Activity.java" afterDir="false" />
     </list>
     <list id="80128adb-7480-4665-b0e5-5d4142c53817" name="Revert &quot;update&quot;" comment="Revert &quot;update&quot;&#10;&#10;This reverts commit a29086ff" />
@@ -135,38 +142,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616095965563" />
-    <state width="2517" height="283" key="GridCell.Tab.0.bottom" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.0.bottom" timestamp="1616099212335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.0.center" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212335" />
+    <state width="2517" height="283" key="GridCell.Tab.0.center" timestamp="1616099212334">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.0.left" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212334" />
+    <state width="2517" height="283" key="GridCell.Tab.0.left" timestamp="1616099212334">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.0.right" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212334" />
+    <state width="2517" height="283" key="GridCell.Tab.0.right" timestamp="1616099212335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.1.bottom" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212335" />
+    <state width="2517" height="283" key="GridCell.Tab.1.bottom" timestamp="1616099212335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.1.center" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212335" />
+    <state width="2517" height="283" key="GridCell.Tab.1.center" timestamp="1616099212335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.1.left" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212335" />
+    <state width="2517" height="283" key="GridCell.Tab.1.left" timestamp="1616099212335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
-    <state width="2517" height="283" key="GridCell.Tab.1.right" timestamp="1616098719156">
+    <state width="2517" height="283" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212335" />
+    <state width="2517" height="283" key="GridCell.Tab.1.right" timestamp="1616099212335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="283" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616098719156" />
+    <state width="2517" height="283" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616099212335" />
     <state x="1168" y="568" width="682" height="504" key="MultipleFileMergeDialog" timestamp="1616095940142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
