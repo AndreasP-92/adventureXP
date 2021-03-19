@@ -1,10 +1,6 @@
 package backend.demo.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "profile")
@@ -17,10 +13,6 @@ public class Profile {
     private String lastname;
     private int phone;
     private String fkuser;
-
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "profile")
-
-    private Users user;
 
 //    @OneToMany
 //    @JoinColumn(name = "profile_id")
@@ -37,7 +29,6 @@ public class Profile {
         this.lastname = lastname;
         this.phone = phone;
         this.fkuser = fkuser;
-        this.user = user;
     }
 
     public int getId() {
@@ -80,13 +71,6 @@ public class Profile {
         this.fkuser = fkuser;
     }
 
-    public Users getUser() {
-        return user;
-    }
-
-    public void setUser(Users user) {
-        this.user = user;
-    }
 
     @Override
     public String toString() {
@@ -96,7 +80,6 @@ public class Profile {
                 ", lastname='" + lastname + '\'' +
                 ", phone=" + phone +
                 ", fkuser='" + fkuser + '\'' +
-                ", user=" + user +
                 '}';
     }
 }
