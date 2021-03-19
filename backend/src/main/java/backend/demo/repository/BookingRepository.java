@@ -7,5 +7,7 @@ import java.util.List;
 
 public interface BookingRepository extends JpaRepository<Booking, Long> {
 //    public Booking findBy(String activity);
-    public Booking findByActivity(String activity);
+//    public Booking findByActivity(String activity);
+
+    public Booking findByMail(String mail);
 }

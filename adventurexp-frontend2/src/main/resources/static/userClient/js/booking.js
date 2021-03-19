@@ -20,7 +20,7 @@ thisForm.addEventListener('submit', async function (e) {
 
 });
 const mail = "and@and";
-const myUrl = `http://localhost:5002/select/activities/${mail}`;
+const myUrl = `http://localhost:5002/select/activities/`;
 
 const requestOptions = {
     'content-type': 'application/json',

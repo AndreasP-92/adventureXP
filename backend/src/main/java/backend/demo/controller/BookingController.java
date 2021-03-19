@@ -22,11 +22,6 @@ public class BookingController {
         return bookings;
     }
 
-//    @GetMapping("/select/bookings/{test}")
-//    public Booking findAllBookings(@PathVariable String test){
-//        Booking bookings = bookingRepository.findByBooking_activity(test);
-//        return bookings;
-//    }
 
     @PostMapping(value="/insert/booking", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)

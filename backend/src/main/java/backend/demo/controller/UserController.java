@@ -1,8 +1,8 @@
 package backend.demo.controller;
 
 
-import backend.demo.model.Profile;
-import backend.demo.model.User;
+
+import backend.demo.model.Users;
 import backend.demo.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;
@@ -20,14 +20,14 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getProfiles(Model model) {
-        List<User> user = userRepository.findAll();
+    public List<Users> getProfiles(Model model) {
+        List<Users> user = userRepository.findAll();
         return user;
     }
 
     @PostMapping(value = "/insert/user", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public User insertUser(@RequestBody User user) {
+    public Users insertUser(@RequestBody Users user) {
         System.out.println(user);
 
         return userRepository.save(user);

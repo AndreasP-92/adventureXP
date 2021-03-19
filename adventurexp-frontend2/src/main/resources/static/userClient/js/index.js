@@ -3,6 +3,7 @@
 
 //======== GET ALL ACTIVITIES ========
 
+const mail = "javascript version af at hente en parameter"
 
 const myUrl = `http://localhost:5002/select/activities`;
 
@@ -20,11 +21,11 @@ fetch(myUrl, requestOptions)
         console.log(data)
     })
 
-function gotActivityData(data){
-    console.log('activities====',data)
+function gotActivityData(data) {
+    console.log('activities====', data)
     const activitiesMap = data.map(dd => dd);
-    console.log('activitiesMap====',activitiesMap)
-    activitiesMap.forEach(fillActivities)
+    console.log('activitiesMap====', activitiesMap)
+    // activitiesMap.forEach(fillDropDown)
 }
 
 function fillActivities(item, index){
@@ -37,7 +38,7 @@ function fillActivities(item, index){
 
 // === CREATE ATAG ===
     let aTag = document.createElement('a')
-    aTag.href = item.id;
+    aTag.href = item.activity_id;
     div.appendChild(aTag);
 
 // === CREATE IMAGE TAG ===

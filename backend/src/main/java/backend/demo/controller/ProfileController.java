@@ -20,10 +20,12 @@ public class ProfileController {
     }
 
     @GetMapping("/profiles")
-    public List<Profile> getProfiles(Model model) {
+    public List<Profile> getProfiles() {
         List<Profile> profiles = profileRepository.findAll();
         return profiles;
     }
+
+
 
     @PostMapping(value = "/insert/profile", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
