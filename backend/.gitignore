@@ -31,3 +31,17 @@ build/
 
 ### VS Code ###
 .vscode/
+/.idea/dataSources/
+/.idea/libraries/
+/.idea/shelf/
+/.idea/compiler.xml
+/.idea/dataSources.local.xml
+/.idea/dataSources.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/sqldialects.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/.idea/workspace.xml

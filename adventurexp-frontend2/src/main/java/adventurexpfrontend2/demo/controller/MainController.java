@@ -33,7 +33,7 @@ public class MainController {
     @GetMapping("/booking")
     public String booking(){return "/userClient/booking";}
 
-    @GetMapping("/profile/about")
+    @GetMapping("/profile/about/{mail}")
     public String profileAbout(){
         return "/userClient/profileAbout";
     }

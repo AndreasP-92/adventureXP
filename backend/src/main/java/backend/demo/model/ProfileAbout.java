@@ -1,37 +1,28 @@
 package backend.demo.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
-public class User {
+public class ProfileAbout {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String mail;
     private String password;
-    private int enabled;
 
 
-//    @OneToMany
-//    @JoinColumn(name = "id")
-//    private Set<Profile> profiles = new HashSet<>();
-
-//    @ManyToOne
-//    @JsonBackReference
-//    private Profile profile;
-
-    public User() {
+    public ProfileAbout() {
     }
 
-    public User(String mail, String password, int enabled, Set<Profile> profiles) {
+    public ProfileAbout(String mail, String password) {
         this.mail = mail;
         this.password = password;
-        this.enabled = enabled;
     }
 
     public int getId() {
@@ -58,23 +49,12 @@ public class User {
         this.password = password;
     }
 
-    public int getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(int enabled) {
-        this.enabled = enabled;
-    }
-
-
-
     @Override
     public String toString() {
-        return "User{" +
+        return "ProfileAbout{" +
                 "id=" + id +
                 ", mail='" + mail + '\'' +
                 ", password='" + password + '\'' +
-                ", enabled=" + enabled +
                 '}';
     }
 }

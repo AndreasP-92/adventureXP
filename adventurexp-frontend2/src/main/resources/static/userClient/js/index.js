@@ -17,7 +17,7 @@ fetch(myUrl, requestOptions)
     .then(response => response.json())
     .then(data => {
         data.forEach(fillActivities)
-        console.log(data.pic)
+        console.log(data)
     })
 
 function gotActivityData(data){
@@ -42,11 +42,11 @@ function fillActivities(item, index){
 
 // === CREATE IMAGE TAG ===
     let img = document.createElement("img")
-    img.src = item.pic;
+    img.src = item.activity_pic;
     aTag.appendChild(img);
 
 // === CREATE H2 TAG ===
     let h2 = document.createElement("h2")
-    h2.textContent = item.name;
+    h2.textContent = item.activity_name;
     div.appendChild(h2);
 }
