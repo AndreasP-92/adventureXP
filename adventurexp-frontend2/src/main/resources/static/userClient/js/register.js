@@ -11,7 +11,7 @@ thisForm.addEventListener('submit', async function (e) {
 
 });
 async function insertUser(formData){
-    const response1 = await fetch('http://localhost:5002/insert/user', {
+    const response1 = await fetch('http://138.197.186:5002/insert/user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(Object.fromEntries(formData))
@@ -22,7 +22,7 @@ async function insertUser(formData){
 }
 
 async function insertProfile(formData){
-    const response = await fetch('http://localhost:5002/insert/profile', {
+    const response = await fetch('http://138.197.186:5002/insert/profile', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(Object.fromEntries(formData))

@@ -5,7 +5,7 @@
 
 const mail = "javascript version af at hente en parameter"
 
-const myUrl = `http://localhost:5002/select/activities/${mail}`;
+const myUrl = `http://localhost:5002/select/activities`;
 
 const requestOptions = {
     'content-type': 'application/json',
@@ -17,24 +17,37 @@ const requestOptions = {
 fetch(myUrl, requestOptions)
     .then(response => response.json())
     .then(data => {
-        gotActivityData(data)
+        data.forEach(fillActivities)
+        console.log(data)
     })
 
-function gotActivityData(data){
-    console.log('activities====',data)
-    const activitiesMap = data.map(dd => dd.profile_email);
-    document.getElementById('mail').value = mail;
-    console.log('activitiesMap====',activitiesMap)
+function gotActivityData(data) {
+    console.log('activities====', data)
+    const activitiesMap = data.map(dd => dd);
+    console.log('activitiesMap====', activitiesMap)
     // activitiesMap.forEach(fillDropDown)
-
 }
 
-// function fillDropDown(item, index){
-//     const activitySelector = document.querySelector('.activiySelector')
-//
-//     let el = document.createElement("option");
-//     el.textContent = item;
-//     console.log("ITEM=====",item)
-//     el.value = item;
-//     activitySelector.appendChild(el);
-// }
+function fillActivities(item, index){
+    const activitySelector = document.querySelector('.activityList')
+
+// === CREATE DIV ===
+    let div = document.createElement("div")
+    div.className = "col-sm-4"
+    activitySelector.appendChild(div);
+
+// === CREATE ATAG ===
+    let aTag = document.createElement('a')
+    aTag.href = item.activity_id;
+    div.appendChild(aTag);
+
+// === CREATE IMAGE TAG ===
+    let img = document.createElement("img")
+    img.src = item.activity_pic;
+    aTag.appendChild(img);
+
+// === CREATE H2 TAG ===
+    let h2 = document.createElement("h2")
+    h2.textContent = item.activity_name;
+    div.appendChild(h2);
+}

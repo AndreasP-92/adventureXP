@@ -32,7 +32,7 @@ fetch(myUrl, requestOptions)
 
 function gotOneMailData(data){
     console.log('mail====',data)
-    const mail = data.map(dd => dd.email);
+    const mail = data.map(dd => dd.mail);
     console.log('activitiesMap====',mail)
     mail.forEach(fillDropDown)
     document.getElementById('mail').value = mail;
