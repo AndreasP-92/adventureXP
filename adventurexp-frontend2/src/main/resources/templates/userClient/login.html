@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
@@ -10,6 +11,9 @@
 <body>
 <header>
     <!--=================== NAVIGATION ============================ -->
+    <div th:replace="fragments/navbar :: navigation">
+
+    </div>
 
 </header>
 <main class="container" align="">
@@ -51,12 +55,12 @@
 <!--        DONT HAVE A PROFILE        -->
         <div class="mt-4">
             <div class="d-flex justify-content-center links">
-                Har du ikke en bruger? <a href="/contact" class="ml-2 text-white">Opret Bruger</a>
+                Har du ikke en bruger? <a href="/register" class="ml-2 text-white">Opret Bruger</a>
             </div>
 
 <!--            FOTGOT PASSWORD-->
             <div class="d-flex justify-content-center links">
-                <a href="/contact" class="text-white">Glemt Kodeord?</a>
+                <a href="/contact/" class="text-white">Glemt Kodeord?</a>
             </div>
         </div>
     </div>
