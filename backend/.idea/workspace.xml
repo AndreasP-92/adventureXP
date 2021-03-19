@@ -22,22 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload">
-      <change afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/java/adventurexpfrontend2/demo/controller/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/java/adventurexpfrontend2/demo/controller/config/SecurityWebInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/java/adventurexpfrontend2/demo/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/java/adventurexpfrontend2/demo/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/static/userClient/js/booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adventurexp-frontend2/src/main/resources/templates/userClient/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/demo/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/demo/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/controller/BookingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/demo/repository/BookingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/demo/repository/BookingRepository.class" afterDir="false" />
-    </list>
+    <list default="true" id="0f61199b-24de-4a9d-8451-80d101f581ab" name="Default Changelist" comment="backend upload 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../adventureXP2/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -98,6 +83,7 @@
       <workItem from="1615986598013" duration="8145000" />
       <workItem from="1616060786486" duration="3676000" />
       <workItem from="1616095969725" duration="749000" />
+      <workItem from="1616149462004" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="backend upload">
       <created>1615929357511</created>
@@ -106,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615929357511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="backend upload 2">
+      <created>1616149489565</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616149489565</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,9 +119,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="backend upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend upload" />
+    <MESSAGE value="backend upload 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend upload 2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616150041741">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616150041741" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1616096117483">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -165,5 +163,13 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="283" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616109065177" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1616149521710">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616149521710" />
+    <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616149528024">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.261.1920.1040@0.0.2560.1400" timestamp="1616149528024" />
   </component>
 </project>
