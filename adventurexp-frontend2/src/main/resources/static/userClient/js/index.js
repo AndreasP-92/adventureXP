@@ -38,16 +38,16 @@ function fillActivities(item, index){
 
 // === CREATE ATAG ===
     let aTag = document.createElement('a')
-    aTag.href = item.activity_id;
+    aTag.href = item.id;
     div.appendChild(aTag);
 
 // === CREATE IMAGE TAG ===
     let img = document.createElement("img")
-    img.src = item.activity_pic;
+    img.src = item.pic;
     aTag.appendChild(img);
 
 // === CREATE H2 TAG ===
     let h2 = document.createElement("h2")
-    h2.textContent = item.activity_name;
+    h2.textContent = item.name;
     div.appendChild(h2);
 }

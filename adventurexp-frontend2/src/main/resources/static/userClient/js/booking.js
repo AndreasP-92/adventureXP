@@ -1,6 +1,7 @@
 const thisForm = document.getElementById('bookingForm');
 const termsOfUse = document.getElementById('termsOfUse');
 
+alert("test")
 thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
     const formData = new FormData(thisForm).entries()
